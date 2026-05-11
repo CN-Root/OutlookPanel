@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outlook Panel - 控制台</title>
+    <link rel="icon" type="image/png" href="/static/image/favicon/OutlookPanel_Favicon.svg">
     <style>
         :root {
             --bg: #f5f5f7;
