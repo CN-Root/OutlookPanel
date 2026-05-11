@@ -1,6 +1,14 @@
-# OutlookPanel
+<p align="center">
+  <img src="https://raw.githubusercontent.com/CN-Root/OutlookPanel/466b00d90e8c2673e781ee9949b8d52ff63fab9a/static/image/favicon/OutlookPanel_Favicon.svg" width="120" alt="OutlookPanel Logo">
+</p>
 
-一个基于 PHP + SQLite 的轻量级 Outlook 邮箱管理系统。
+<h1 align="center">OutlookPanel</h1>
+
+<p align="center">
+一个基于 PHP + SQLite 的轻量级 Outlook 邮箱管理系统
+</p>
+
+---
 
 支持：
 
@@ -13,8 +21,6 @@
 * 无需 MySQL
 * 无需 Docker
 * 开箱即用
-
----
 
 # 功能介绍
 
