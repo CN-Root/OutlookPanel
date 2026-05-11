@@ -288,15 +288,32 @@ if ($action === 'get_settings') {
     echo json_encode($data);
     exit;
 }
+// =============================================================================
 // 退出登录
+// =============================================================================
 if ($action === 'logout') {
-    session_start();
-    $_SESSION = array(); // 清空所有 Session 变量
+
+    // 清空当前 Session 数据
+    $_SESSION = [];
+
+    // 删除 Session Cookie
+    // 防止浏览器继续保存登录状态
     if (isset($_COOKIE[session_name()])) {
-        setcookie(session_name(), '', time()-42000, '/');
+        setcookie(
+            session_name(), // Session 名称
+            '',             // 清空内容
+            time() - 42000, // 设置为过去时间立即失效
+            '/'             // 全站生效
+        );
     }
+
+    // 销毁 Session
     session_destroy();
-    header('Location: login.php'); // 退出后跳转回登录页
+
+    // 跳转回网站首页（登录页）
+    header('Location: /');
+
+    // 终止程序执行
     exit;
 }
 
