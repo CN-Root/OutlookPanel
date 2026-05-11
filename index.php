@@ -31,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录 - Outlook 管理后台</title>
+    <link rel="icon" type="image/png" href="/static/image/favicon/OutlookPanel_Favicon.svg">
     <style>
         body { 
             background: #F9FAFB; 
